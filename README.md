@@ -1,6 +1,10 @@
-# Manas Sabhnani — Resume Site
+# Manas Sabhnani
 
-This repository hosts a zero-build personal resume website for Manas Sabhnani, an engineer focused on generative AI, agentic AI systems, and production-grade LLM workflows.
+Manas is a Generative AI and Agentic AI Engineer based in New Delhi, India. He works at the point where LLM ideas become dependable software: designing multi-agent systems, connecting them to real tools and data, and shipping them into enterprise workflows that need to be observable, governed, and reliable.
+
+His day-to-day work spans LangGraph orchestration, MCP and function calling, retrieval-augmented generation, agent evaluation, guardrails, and human-in-the-loop automation. He is especially interested in practical AI systems for IT operations—Q&A, incident triage, remediation, and certificate automation—that reduce repetitive work without turning production into a black box.
+
+This repository is his zero-build resume site: a fast, accessible snapshot of what he builds, the systems he has shipped, and the engineering foundations behind them.
 
 Live site: https://manassabhnani.github.io
 
