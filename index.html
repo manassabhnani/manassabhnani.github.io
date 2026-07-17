@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resume for Manas Sabhnani, Generative AI & Agentic AI Engineer — LangGraph multi-agent orchestration, RAG, and production LLM systems." />
+    <meta name="theme-color" content="#0b2947" />
+    <title>Manas Sabhnani — Agentic AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sheet">
+
+      <header class="topbar">
+        <a class="wordmark" href="#top">
+          <span class="wordmark-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="2"/><path d="M2 11h28M11 30V11"/></svg>
+          </span>
+          MANAS SABHNANI
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#experience"><span class="nav-idx">01</span>Experience</a>
+          <a href="#work"><span class="nav-idx">02</span>Work</a>
+          <a href="#toolkit"><span class="nav-idx">03</span>Toolkit</a>
+          <a href="#contact"><span class="nav-idx">04</span>Contact</a>
+        </nav>
+        <button class="print-button" type="button" onclick="window.print()">Export PDF</button>
+      </header>
+
+      <main id="top">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="intro-title">
+          <div class="hero-text">
+            <p class="tag">SHEET 01/06 · RESUME · REV 2026.07</p>
+            <h1 id="intro-title">MANAS<br />SABHNANI</h1>
+            <p class="hero-role">Generative AI &amp; Agentic AI Engineer</p>
+            <p class="hero-desc">I design, build, and ship autonomous multi-agent systems&nbsp;— taking LLM workflows from pilot to production for enterprise teams, with the guardrails and observability to keep them there.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Get in touch</a>
+              <a class="btn btn-ghost" href="mailto:manassabhnani10@gmail.com">manassabhnani10@gmail.com</a>
+            </div>
+            <div class="hero-stats">
+              <div><strong>3</strong><span>years in production AI</span></div>
+              <div><strong>10+</strong><span>enterprise clients</span></div>
+              <div><strong>0</strong><span>critical incidents</span></div>
+            </div>
+          </div>
+
+          <div class="hero-diagram" role="img" aria-label="Diagram of an agentic AI pipeline: a user query enters an orchestrator built with LangGraph, which routes to tools, MCP integrations, and RAG with guardrails, converging on a production output annotated with a 40 percent cut in integration overhead and zero critical incidents across 15+ workflows.">
+            <svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg">
+              <!-- grid backdrop -->
+              <g class="diagram-grid">
+                <path d="M0 40H600 M0 120H600 M0 200H600 M0 280H600 M0 360H600 M0 440H600 M0 520H600" />
+                <path d="M40 0V520 M140 0V520 M240 0V520 M340 0V520 M440 0V520 M540 0V520" />
+              </g>
+
+              <!-- connectors -->
+              <g class="diagram-line">
+                <path d="M300 90 V140" marker-end="url(#arrow)"/>
+                <path d="M300 210 V232 M300 232 H160 M300 232 H440" />
+                <path d="M160 232 V260" marker-end="url(#arrow)"/>
+                <path d="M440 232 V260" marker-end="url(#arrow)"/>
+                <path d="M160 340 V370 H300 M440 340 V370 H300" />
+                <path d="M300 370 V400" marker-end="url(#arrow)"/>
+              </g>
+
+              <!-- node: input -->
+              <g class="diagram-node">
+                <rect x="210" y="46" width="180" height="44" rx="2"/>
+                <text x="300" y="73" text-anchor="middle" class="node-label">USER QUERY</text>
+              </g>
+
+              <!-- node: orchestrator -->
+              <g class="diagram-node diagram-node-key">
+                <rect x="180" y="140" width="240" height="70" rx="2"/>
+                <text x="300" y="168" text-anchor="middle" class="node-label">AGENT ORCHESTRATOR</text>
+                <text x="300" y="188" text-anchor="middle" class="node-sub">LangGraph · multi-agent</text>
+              </g>
+
+              <!-- node: tools -->
+              <g class="diagram-node">
+                <rect x="60" y="260" width="200" height="80" rx="2"/>
+                <text x="160" y="290" text-anchor="middle" class="node-label">TOOLS + MCP</text>
+                <text x="160" y="310" text-anchor="middle" class="node-sub">Function calling</text>
+                <text x="160" y="328" text-anchor="middle" class="node-sub">ReAct tool use</text>
+              </g>
+
+              <!-- node: rag -->
+              <g class="diagram-node">
+                <rect x="340" y="260" width="200" height="80" rx="2"/>
+                <text x="440" y="290" text-anchor="middle" class="node-label">RAG + GUARDRAILS</text>
+                <text x="440" y="310" text-anchor="middle" class="node-sub">Retrieval, embeddings</text>
+                <text x="440" y="328" text-anchor="middle" class="node-sub">Governance checks</text>
+              </g>
+
+              <!-- node: output -->
+              <g class="diagram-node diagram-node-key">
+                <rect x="190" y="400" width="220" height="56" rx="2"/>
+                <text x="300" y="433" text-anchor="middle" class="node-label">PRODUCTION OUTPUT</text>
+              </g>
+
+              <!-- annotation callouts -->
+              <g class="diagram-annotation">
+                <path d="M420 175 H560" />
+                <text x="565" y="152" class="annot-num">40%</text>
+                <text x="565" y="170" class="annot-txt">less integration</text>
+                <text x="565" y="184" class="annot-txt">overhead</text>
+              </g>
+              <g class="diagram-annotation">
+                <path d="M410 424 H560" />
+                <text x="565" y="410" class="annot-num">15+</text>
+                <text x="565" y="428" class="annot-txt">workflows in</text>
+                <text x="565" y="442" class="annot-txt">production</text>
+              </g>
+              <g class="diagram-annotation">
+                <path d="M40 300 H10" />
+                <text x="6" y="286" class="annot-num annot-num-left">0</text>
+                <text x="6" y="304" class="annot-txt annot-txt-left">critical</text>
+                <text x="6" y="318" class="annot-txt annot-txt-left">incidents</text>
+              </g>
+
+              <defs>
+                <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                  <path d="M0 0 L8 4 L0 8 Z" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+        </section>
+
+        <!-- PROFILE / SPEC -->
+        <section class="profile" aria-labelledby="profile-title">
+          <p class="tag">SHEET 02/06 · PROFILE</p>
+          <div class="profile-grid">
+            <div class="profile-copy">
+              <h2 id="profile-title">Built for systems<br />that have to hold up.</h2>
+              <p>Three years across LLM orchestration, RAG, tool use, AI governance, and observability — taking agentic AI from pilot validation to full production rollout, at a scale where a broken workflow is somebody's incident, not a demo bug.</p>
+            </div>
+            <dl class="spec-list" aria-label="Quick specifications">
+              <div><dt>Location</dt><dd>New Delhi, India</dd></div>
+              <div><dt>Focus</dt><dd>Agentic AI · LLM orchestration · Governance</dd></div>
+              <div><dt>Currently</dt><dd>Associate Technical Engineer, Kyndryl India</dd></div>
+              <div><dt>Available for</dt><dd>Full-time roles &amp; consulting</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="experience" aria-labelledby="experience-title">
+          <p class="tag">SHEET 03/06 · EXPERIENCE</p>
+          <h2 id="experience-title">Where the work<br />actually shipped.</h2>
+
+          <div class="flow">
+            <article class="flow-node">
+              <div class="flow-marker" aria-hidden="true">
+                <span class="flow-dot"></span>
+                <span class="flow-track"></span>
+              </div>
+              <div class="flow-body">
+                <div class="flow-head">
+                  <h3>Associate Technical Engineer <small>— Agentic AI &amp; Automation</small></h3>
+                  <div class="flow-meta"><span>Kyndryl India</span><span>Jul 2023 — Present</span><span>Delhi NCR, India</span></div>
+                </div>
+                <ul>
+                  <li>Engineered LangGraph multi-agent orchestration and MCP-driven tool use across 15+ production workflows, cutting integration overhead by 40% with zero critical production incidents.</li>
+                  <li>Shipped autonomous Q&amp;A, incident triage, remediation, and SSL certificate automation agents for 10+ enterprise clients, removing manual IT intervention from high-volume operational workflows.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="flow-node">
+              <div class="flow-marker" aria-hidden="true">
+                <span class="flow-dot"></span>
+              </div>
+              <div class="flow-body">
+                <div class="flow-head">
+                  <h3>Website Developer Intern</h3>
+                  <div class="flow-meta"><span>Birja Constructions LLP</span><span>May 2022 — Jul 2022</span><span>New Delhi, India</span></div>
+                </div>
+                <ul>
+                  <li>Sole developer on a five-person cross-functional team; designed, built, and shipped a full-stack blog platform to production, reaching 20,000 viewers in its first month.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- SELECTED WORK -->
+        <section id="work" class="work" aria-labelledby="work-title">
+          <p class="tag">SHEET 04/06 · SELECTED WORK</p>
+          <h2 id="work-title">Two things worth<br />a closer look.</h2>
+
+          <div class="panel-list">
+            <article class="panel">
+              <div class="panel-top"><span>SPEC · 2024</span><span>ML / Computer Vision</span></div>
+              <h3>Pneuvid</h3>
+              <p>A CNN-based classifier for detecting pneumonia and COVID-19 from chest X-rays, built to flag likely cases for faster clinical review rather than replace a radiologist's read.</p>
+              <div class="panel-tags"><span>PyTorch</span><span>CNN</span><span>Image classification</span></div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-top"><span>SPEC · 2023—now</span><span>Agentic AI / Platform</span></div>
+              <h3>Production agent architecture</h3>
+              <p>The orchestration layer behind the Kyndryl work above: a LangGraph-based multi-agent system with MCP tool integrations, retrieval, and governance guardrails, designed to run unattended across dozens of enterprise workflows.</p>
+              <div class="panel-tags"><span>LangGraph</span><span>MCP</span><span>RAG</span><span>Guardrails</span></div>
+            </article>
+          </div>
+          <a class="more-link" href="https://github.com/manassabhnani" target="_blank" rel="noreferrer">More on GitHub <span>↗</span></a>
+        </section>
+
+        <!-- TOOLKIT -->
+        <section id="toolkit" class="toolkit" aria-labelledby="toolkit-title">
+          <p class="tag">SHEET 05/06 · TOOLKIT</p>
+          <h2 id="toolkit-title">Legend.</h2>
+          <div class="legend-grid">
+            <div class="legend-col">
+              <h3><span class="legend-swatch"></span>Agentic AI</h3>
+              <ul><li>LangChain / LangGraph</li><li>MCP / ReAct</li><li>Multi-agent workflows</li><li>Tool use &amp; function calling</li><li>Agent evaluation</li></ul>
+            </div>
+            <div class="legend-col">
+              <h3><span class="legend-swatch"></span>GenAI + RAG</h3>
+              <ul><li>RAG pipelines</li><li>Embeddings / semantic search</li><li>Prompt engineering</li><li>Guardrails / AI governance</li><li>Human-in-the-loop ML</li></ul>
+            </div>
+            <div class="legend-col">
+              <h3><span class="legend-swatch"></span>Engineering</h3>
+              <ul><li>Python / async</li><li>FastAPI / Flask</li><li>OpenAI / Anthropic APIs</li><li>Azure / Docker / CI-CD</li><li>SQL / JavaScript</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- CREDENTIALS -->
+        <section class="credentials" aria-labelledby="credentials-title">
+          <p class="tag">SHEET 06/06 · CREDENTIALS</p>
+          <h2 id="credentials-title">Certifications &amp; education.</h2>
+          <div class="cred-grid">
+            <div>
+              <h3>Certifications</h3>
+              <p><strong>Certified Agentic AI Engineer (CAAE)</strong><br />REVA Academy for Corporate Excellence · May 2026</p>
+              <p><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong><br />Issued Jan 2024</p>
+            </div>
+            <div>
+              <h3>Education</h3>
+              <p><strong>B.Tech, Computer Science &amp; Engineering</strong><br />Amity School of Engineering &amp; Technology, Noida · 2019 — 2023 · 7.82 CGPA</p>
+              <p><strong>Senior School Certificate, PCM with Computer Science</strong><br />St. Michael's Senior Secondary School, New Delhi · 2017 — 2019 · 81.4%</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- TITLE BLOCK / CONTACT -->
+      <footer id="contact" class="titleblock">
+        <div class="titleblock-main">
+          <h2>Let's build the<br />next system.</h2>
+          <a class="email-link" href="mailto:manassabhnani10@gmail.com">manassabhnani10@gmail.com <span>↗</span></a>
+        </div>
+        <div class="titleblock-fields">
+          <div><dt>Drawn by</dt><dd>M. Sabhnani</dd></div>
+          <div><dt>Project</dt><dd>Career, v2026</dd></div>
+          <div><dt>Sheet</dt><dd>06 of 06</dd></div>
+          <div><dt>Links</dt><dd><a href="https://linkedin.com/in/manas10x" target="_blank" rel="noreferrer">LinkedIn ↗</a> · <a href="https://github.com/manassabhnani" target="_blank" rel="noreferrer">GitHub ↗</a></dd></div>
+        </div>
+        <div class="titleblock-bottom">
+          <span>© <span id="year"></span> Manas Sabhnani</span>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
