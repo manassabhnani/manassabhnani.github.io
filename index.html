@@ -31,7 +31,6 @@
           <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
             <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark mode</span>
           </button>
-          <button class="print-button" type="button" onclick="window.print()">Export PDF</button>
         </div>
       </header>
 
@@ -46,6 +45,7 @@
             <p class="hero-desc">I design, build, and ship autonomous multi-agent systems&nbsp;— taking LLM workflows from pilot to production for enterprise teams, with the guardrails and observability to keep them there.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact">Get in touch</a>
+              <a class="btn btn-ghost" href="resume.pdf" download="Manas-Sabhnani-Resume.pdf">Download resume PDF ↗</a>
               <a class="btn btn-ghost" href="mailto:manassabhnani10@gmail.com">manassabhnani10@gmail.com</a>
             </div>
             <div class="hero-stats">
@@ -134,6 +134,19 @@
                 </marker>
               </defs>
             </svg>
+          </div>
+
+          <div class="mobile-pipeline" role="img" aria-label="Mobile diagram of an agentic AI pipeline: a user query is routed through a LangGraph orchestrator to tools and retrieval with guardrails, producing a production-ready answer.">
+            <div class="mobile-pipeline-node"><span class="mobile-pipeline-index">01</span><strong>User query</strong><span>Intent enters the system</span></div>
+            <span class="mobile-pipeline-arrow" aria-hidden="true">↓</span>
+            <div class="mobile-pipeline-node mobile-pipeline-key"><span class="mobile-pipeline-index">02</span><strong>Agent orchestrator</strong><span>LangGraph · multi-agent routing</span></div>
+            <span class="mobile-pipeline-arrow" aria-hidden="true">↓</span>
+            <div class="mobile-pipeline-branches">
+              <div class="mobile-pipeline-node"><span class="mobile-pipeline-index">03A</span><strong>Tools + MCP</strong><span>Function calling</span></div>
+              <div class="mobile-pipeline-node"><span class="mobile-pipeline-index">03B</span><strong>RAG + guardrails</strong><span>Retrieval · governance</span></div>
+            </div>
+            <span class="mobile-pipeline-arrow" aria-hidden="true">↓</span>
+            <div class="mobile-pipeline-node mobile-pipeline-key"><span class="mobile-pipeline-index">04</span><strong>Production output</strong><span>Reliable, observable workflow</span></div>
           </div>
         </section>
 
@@ -266,7 +279,7 @@
           <div><dt>Drawn by</dt><dd>M. Sabhnani</dd></div>
           <div><dt>Project</dt><dd>Career, v2026</dd></div>
           <div><dt>Sheet</dt><dd>06 of 06</dd></div>
-          <div><dt>Links</dt><dd><a href="https://linkedin.com/in/manas10x" target="_blank" rel="noreferrer">LinkedIn ↗</a> · <a href="https://github.com/manassabhnani" target="_blank" rel="noreferrer">GitHub ↗</a></dd></div>
+          <div><dt>Links</dt><dd><a href="https://linkedin.com/in/manas10x" target="_blank" rel="noreferrer">LinkedIn ↗</a> · <a href="https://github.com/manassabhnani" target="_blank" rel="noreferrer">GitHub ↗</a> · <a href="resume.pdf" download="Manas-Sabhnani-Resume.pdf">Resume PDF ↗</a></dd></div>
         </div>
         <div class="titleblock-bottom">
           <span>© <span id="year"></span> Manas Sabhnani</span>
