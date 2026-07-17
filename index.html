@@ -27,7 +27,12 @@
           <a href="#toolkit"><span class="nav-idx">03</span>Toolkit</a>
           <a href="#contact"><span class="nav-idx">04</span>Contact</a>
         </nav>
-        <button class="print-button" type="button" onclick="window.print()">Export PDF</button>
+        <div class="topbar-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark mode</span>
+          </button>
+          <button class="print-button" type="button" onclick="window.print()">Export PDF</button>
+        </div>
       </header>
 
       <main id="top">
@@ -269,6 +274,23 @@
         </div>
       </footer>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      const themeToggle = document.querySelector('.theme-toggle');
+      const savedTheme = localStorage.getItem('resume-theme');
+      if (savedTheme === 'dark') document.body.classList.add('dark-mode');
+      function syncThemeToggle() {
+        const isDark = document.body.classList.contains('dark-mode');
+        themeToggle.setAttribute('aria-pressed', String(isDark));
+        themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        themeToggle.querySelector('.theme-label').textContent = isDark ? 'Light mode' : 'Dark mode';
+      }
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('resume-theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        syncThemeToggle();
+      });
+      syncThemeToggle();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
