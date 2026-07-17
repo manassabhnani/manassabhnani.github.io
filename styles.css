@@ -47,6 +47,7 @@ a{color:inherit}
   font:500 13px var(--sans);transition:color .15s ease}
 .nav a:hover{color:var(--paper)}
 .nav-idx{font:500 10px var(--mono);color:var(--cyan)}
+.mobile-nav{display:none}
 
 /* ---------- shared section chrome ---------- */
 main section{padding:64px 0;border-bottom:1px solid var(--line)}
@@ -69,7 +70,7 @@ main h2{font:700 clamp(34px,4.8vw,58px)/.98 var(--display);letter-spacing:.01em;
 .hero-stats strong{font:700 30px var(--display);color:var(--paper)}
 .hero-stats span{font:11px var(--mono);color:var(--paper-dim);text-transform:uppercase;letter-spacing:.03em}
 
-.hero-diagram svg{width:100%;height:auto;overflow:visible}
+.hero-diagram svg{display:block;width:100%;height:auto;overflow:visible}
 .hero-diagram{min-width:0}
 .mobile-pipeline{display:none}
 .diagram-grid path{stroke:var(--line-soft);stroke-width:1}
@@ -160,9 +161,27 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
 @media(max-width:900px){
   .sheet{padding:0 6vw}
   .nav{display:none}
+  .mobile-nav{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+  .mobile-nav a{display:flex;align-items:center;justify-content:center;gap:7px;min-width:0;padding:12px 6px;color:var(--paper-dim);font:500 11px var(--sans);text-decoration:none;border-right:1px solid var(--line-soft)}
+  .mobile-nav a:last-child{border-right:0}
+  .mobile-nav a:hover{color:var(--paper)}
+  .mobile-nav span{font:500 9px var(--mono);color:var(--cyan)}
   main section{padding:64px 0}
   .hero{grid-template-columns:1fr;padding-top:40px}
-  .hero-diagram{order:-1;margin-bottom:16px}
+  .hero-diagram{display:none}
+  .mobile-pipeline{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin:0 0 4px}
+  .mobile-pipeline-node{display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:baseline;border:1px solid var(--line);background:var(--panel);padding:12px 14px}
+  .mobile-pipeline-node strong{font:600 13px var(--mono);letter-spacing:.02em;color:var(--paper);text-transform:uppercase}
+  .mobile-pipeline-node strong,.mobile-pipeline-node>span{min-width:0;overflow-wrap:anywhere}
+  .mobile-pipeline-node>span:last-child{grid-column:2;font-size:11px;line-height:1.35;color:var(--paper-dim)}
+  .mobile-pipeline-index{font:500 10px var(--mono);color:var(--cyan)}
+  .mobile-pipeline-key{border-color:var(--amber);background:var(--panel-light)}
+  .mobile-pipeline-arrow{text-align:center;color:var(--amber);font:700 18px/1 var(--mono)}
+  .mobile-pipeline-branches{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .mobile-pipeline-branches .mobile-pipeline-node{padding:11px 10px;grid-template-columns:1fr}
+  .mobile-pipeline-branches .mobile-pipeline-node>span:last-child{grid-column:auto}
+  .mobile-pipeline-branches .mobile-pipeline-node strong{font-size:11px;line-height:1.2}
+  .mobile-pipeline-branches .mobile-pipeline-node>span:last-child{font-size:10px}
   .hero-stats{flex-wrap:wrap;gap:28px}
   .profile-grid{grid-template-columns:1fr;gap:36px}
   .panel-list{grid-template-columns:1fr}
@@ -175,6 +194,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
   .sheet{padding:0 20px}
   .topbar{height:auto;min-height:68px;gap:12px;padding:12px 0}
   .topbar-actions{gap:8px}
+  .mobile-nav{grid-template-columns:1fr 1fr}
+  .mobile-nav a{justify-content:flex-start;padding:10px 8px;border-bottom:1px solid var(--line-soft)}
+  .mobile-nav a:nth-child(2){border-right:0}
+  .mobile-nav a:nth-child(3),.mobile-nav a:nth-child(4){border-bottom:0}
   .theme-toggle{padding:8px 10px;font-size:10px}
   .theme-label{display:none}
   .wordmark{font-size:11px;letter-spacing:.04em}
@@ -183,24 +206,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
   .hero-text h1{font-size:clamp(56px,17vw,88px)}
   .hero-role{font-size:16px;line-height:1.35}
   .hero-desc{font-size:14px}
-  .hero-actions{align-items:stretch;gap:10px;margin-bottom:30px}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:10px;margin-bottom:30px}
   .btn{padding:12px 14px;font-size:11px}
+  .hero-actions .btn{width:100%;justify-content:center}
   .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-top:14px}
   .hero-stats strong{font-size:26px}
   .hero-stats span{font-size:9px;line-height:1.35}
-  .hero-diagram{display:none}
-  .mobile-pipeline{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin:0 0 4px}
-  .mobile-pipeline-node{display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:baseline;border:1px solid var(--line);background:var(--panel);padding:12px 14px}
-  .mobile-pipeline-node strong{font:600 13px var(--mono);letter-spacing:.02em;color:var(--paper);text-transform:uppercase}
-  .mobile-pipeline-node>span:last-child{grid-column:2;font-size:11px;line-height:1.35;color:var(--paper-dim)}
-  .mobile-pipeline-index{font:500 10px var(--mono);color:var(--cyan)}
-  .mobile-pipeline-key{border-color:var(--amber);background:var(--panel-light)}
-  .mobile-pipeline-arrow{text-align:center;color:var(--amber);font:700 18px/1 var(--mono)}
-  .mobile-pipeline-branches{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .mobile-pipeline-branches .mobile-pipeline-node{padding:11px 10px;grid-template-columns:1fr}
-  .mobile-pipeline-branches .mobile-pipeline-node>span:last-child{grid-column:auto}
-  .mobile-pipeline-branches .mobile-pipeline-node strong{font-size:11px;line-height:1.2}
-  .mobile-pipeline-branches .mobile-pipeline-node>span:last-child{font-size:10px}
   .profile-grid{gap:28px}
   .spec-list div{display:grid;grid-template-columns:1fr;gap:5px}
   .spec-list dd{text-align:left;font-size:13px}
@@ -229,8 +240,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
   .wordmark{font-size:10px}
   .topbar-actions{gap:5px}
   .theme-toggle{padding:7px 8px;font-size:9px}
-  .hero-actions{flex-direction:column;align-items:stretch}
-  .btn{justify-content:center}
   .hero-stats{gap:8px}
   .hero-stats span{font-size:8px}
   .mobile-pipeline-branches{grid-template-columns:1fr}
