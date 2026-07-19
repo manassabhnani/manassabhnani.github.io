@@ -1,6 +1,6 @@
 # Manas Sabhnani
 
-Manas is a Generative AI and Agentic AI Engineer based in New Delhi, India. He designs and ships dependable AI systems that connect large language models to real tools, data, and enterprise workflows.
+Manas is an Agentic & Generative AI Engineer based in New Delhi, India. With 3 years of experience, he designs and ships dependable AI systems that connect large language models to real tools, data, and enterprise workflows.
 
 His work focuses on LangGraph orchestration, MCP and function calling, retrieval-augmented generation, agent evaluation, guardrails, observability, and human-in-the-loop automation. He is especially interested in practical AI for IT operations, including Q&A, incident triage, remediation, and SSL certificate automation—systems that reduce repetitive work while remaining reliable and governed in production.
 
