@@ -6,7 +6,7 @@ His work focuses on LangGraph orchestration, MCP and function calling, retrieval
 
 ## Work
 
-Manas is currently an Associate Technical Engineer at Kyndryl India, where he builds production AI and automation systems for enterprise clients. He has worked across 15+ production workflows for 10+ clients, reducing integration overhead by 40% while maintaining zero critical incidents across the workflows he shipped.
+Manas is currently an Associate Technical Engineer at Kyndryl India, where he builds production AI and automation systems for enterprise clients. He has worked across 15+ production workflows for 10+ clients, reducing integration overhead by 40% across the systems he shipped.
 
 His work includes:
 
